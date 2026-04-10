@@ -1,0 +1,1 @@
+# 🚀 Bài 2: State và Props \n Chào mừng đến bài 2 nhé!
