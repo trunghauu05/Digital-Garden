@@ -1,13 +1,15 @@
 export default function Home() {
   return (
-    <div className="p-5 mb-4 bg-light rounded-3 shadow-sm">
-      <div className="container-fluid py-5">
-        <h1 className="display-5 fw-bold">🏠 Trang Chủ</h1>
-        <p className="col-md-8 fs-4">
-          Chào mừng đến với hệ thống lưu trữ tài liệu học tập. Dùng Bootstrap 5 nhìn xịn hẳn lên đúng không?
+    <section className="home-hero mb-4 bg-light rounded-3 shadow-sm p-4 p-md-5">
+      <div className="container-fluid py-2 py-md-4">
+        <h1 className="home-title fw-bold mb-3">🏠 Trang Chu</h1>
+        <p className="home-lead mb-4">
+          Chao mung den voi he thong luu tru tai lieu hoc tap. Giao dien da duoc toi uu de de dung tren man hinh dien thoai.
         </p>
-        <button className="btn btn-primary btn-lg" type="button">Khám phá ngay</button>
+        <div className="d-grid d-sm-inline-block">
+          <button className="btn btn-primary btn-lg" type="button">Kham pha ngay</button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,3 +1,23 @@
+.app-content {
+	padding: 0 0.45rem 1rem;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.home-title {
+	font-size: clamp(1.5rem, 6vw, 2.4rem);
+	line-height: 1.2;
+}
+
+.home-lead {
+	max-width: 44ch;
+	font-size: clamp(1rem, 3.8vw, 1.3rem);
+	line-height: 1.45;
+}
+
 .fuo-semester-card {
 	background: #111823;
 	border: 1px solid #1e2b3c;
@@ -482,18 +502,84 @@
 }
 
 @media (max-width: 992px) {
+	.navbar .navbar-collapse {
+		margin-top: 0.6rem;
+		padding: 0.55rem 0.8rem;
+		border-radius: 0.6rem;
+		border: 1px solid rgba(255, 255, 255, 0.12);
+		background: #111823;
+	}
+
+	.navbar .nav-link {
+		padding: 0.5rem 0;
+	}
+
+	.fuo-semester-card .card-header {
+		flex-wrap: wrap;
+		gap: 0.55rem;
+	}
+
+	.fuo-semester-card .card-header h3 {
+		font-size: 1.1rem;
+	}
+
 	.fuo-question-viewer {
 		grid-template-columns: 1fr;
 	}
 
+	.fuo-question-image-panel {
+		min-height: 240px;
+	}
+
 	.fuo-answer-panel {
 		order: 2;
+		padding: 0.85rem;
 	}
 
 	.fuo-test-question-grid {
-		grid-template-columns: repeat(10, minmax(0, 1fr));
+		grid-template-columns: repeat(6, minmax(0, 1fr));
 	}
 
+}
+
+@media (max-width: 576px) {
+	.app-content {
+		padding: 0 0.25rem 0.9rem;
+	}
+
+	.home-hero {
+		padding: 1rem !important;
+	}
+
+	.exam-type-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.subject-grid {
+		gap: 0.45rem 0.75rem;
+	}
+
+	.subject-item {
+		white-space: normal;
+	}
+
+	.fuo-question-image-panel {
+		min-height: 200px;
+	}
+
+	.fuo-nav-button {
+		width: 2rem;
+		height: 2rem;
+		font-size: 1rem;
+	}
+
+	.fuo-test-choice-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.fuo-test-question-grid {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+	}
 }
 
 .subject-icon {
