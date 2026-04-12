@@ -60,6 +60,7 @@ export default function FUOExamViewer() {
     currentIndex: 0,
   }));
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isPseudoFullscreen, setIsPseudoFullscreen] = useState(false);
   const [isTestMode, setIsTestMode] = useState(false);
   const [testSelections, setTestSelections] = useState({});
   const [testResult, setTestResult] = useState(null);
@@ -78,6 +79,7 @@ export default function FUOExamViewer() {
     startY: 0,
     baseOffsetX: 0,
     baseOffsetY: 0,
+    touchIdentifier: null,
     moved: false,
   });
 
@@ -101,6 +103,10 @@ export default function FUOExamViewer() {
         return;
       }
 
+      if (event.key === 'Escape' && isPseudoFullscreen) {
+        setIsPseudoFullscreen(false);
+      }
+
       if (event.key === 'ArrowLeft') {
         updateCurrentIndex((prev) => Math.max(0, prev - 1));
       }
@@ -115,19 +121,34 @@ export default function FUOExamViewer() {
     return () => {
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, [questionItems.length, updateCurrentIndex]);
+  }, [isPseudoFullscreen, questionItems.length, updateCurrentIndex]);
 
   useEffect(() => {
     const onFullscreenChange = () => {
-      setIsFullscreen(document.fullscreenElement === imagePanelRef.current);
+      const fullscreenElement = document.fullscreenElement ?? document.webkitFullscreenElement;
+      setIsFullscreen(fullscreenElement === imagePanelRef.current);
     };
 
     document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
 
     return () => {
       document.removeEventListener('fullscreenchange', onFullscreenChange);
+      document.removeEventListener('webkitfullscreenchange', onFullscreenChange);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isPseudoFullscreen) {
+      return undefined;
+    }
+
+    document.body.classList.add('fuo-pseudo-fullscreen-active');
+
+    return () => {
+      document.body.classList.remove('fuo-pseudo-fullscreen-active');
+    };
+  }, [isPseudoFullscreen]);
 
   const toggleFullscreen = async () => {
     const panel = imagePanelRef.current;
@@ -136,12 +157,31 @@ export default function FUOExamViewer() {
       return;
     }
 
-    if (document.fullscreenElement === panel) {
-      await document.exitFullscreen();
+    if (isPseudoFullscreen) {
+      setIsPseudoFullscreen(false);
       return;
     }
 
-    await panel.requestFullscreen();
+    const fullscreenElement = document.fullscreenElement ?? document.webkitFullscreenElement;
+    const requestFullscreen = panel.requestFullscreen?.bind(panel)
+      ?? panel.webkitRequestFullscreen?.bind(panel);
+    const exitFullscreen = document.exitFullscreen?.bind(document)
+      ?? document.webkitExitFullscreen?.bind(document);
+
+    if (!requestFullscreen || !exitFullscreen) {
+      setIsPseudoFullscreen(true);
+      return;
+    }
+
+    try {
+      if (fullscreenElement === panel) {
+        await exitFullscreen();
+      } else {
+        await requestFullscreen();
+      }
+    } catch {
+      setIsPseudoFullscreen(true);
+    }
   };
 
   const currentQuestionNumber = questionItems[currentIndex]?.questionNumber;
@@ -156,21 +196,22 @@ export default function FUOExamViewer() {
     ? imageZoomState.offset
     : { x: 0, y: 0 };
   const currentImageZoom = IMAGE_ZOOM_LEVELS[currentImageZoomStep];
+  const isViewerFullscreen = isFullscreen || isPseudoFullscreen;
 
   useEffect(() => {
     if (!isImageDragging) {
       return undefined;
     }
 
-    const handleMouseMove = (event) => {
+    const updateOffsetFromPoint = (clientX, clientY) => {
       const dragState = dragStateRef.current;
 
       if (!dragState.active || dragState.imageKey !== currentImageKey) {
         return;
       }
 
-      const deltaX = event.clientX - dragState.startX;
-      const deltaY = event.clientY - dragState.startY;
+      const deltaX = clientX - dragState.startX;
+      const deltaY = clientY - dragState.startY;
 
       if (Math.abs(deltaX) > 2 || Math.abs(deltaY) > 2) {
         dragStateRef.current.moved = true;
@@ -191,17 +232,48 @@ export default function FUOExamViewer() {
       });
     };
 
-    const handleMouseUp = () => {
+    const handleMouseMove = (event) => {
+      updateOffsetFromPoint(event.clientX, event.clientY);
+    };
+
+    const handleTouchMove = (event) => {
+      const dragState = dragStateRef.current;
+      const activeTouch = Array.from(event.touches).find((touch) => touch.identifier === dragState.touchIdentifier);
+
+      if (!activeTouch) {
+        return;
+      }
+
+      event.preventDefault();
+      updateOffsetFromPoint(activeTouch.clientX, activeTouch.clientY);
+    };
+
+    const stopDragging = () => {
       dragStateRef.current.active = false;
+      dragStateRef.current.touchIdentifier = null;
       setIsImageDragging(false);
+    };
+
+    const handleMouseUp = () => {
+      stopDragging();
+    };
+
+    const handleTouchEnd = () => {
+      stopDragging();
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('mouseup', handleMouseUp);
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    window.addEventListener('touchend', handleTouchEnd);
+    window.addEventListener('touchcancel', handleTouchEnd);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
+      window.removeEventListener('touchcancel', handleTouchEnd);
     };
   }, [isImageDragging, currentImageKey]);
 
@@ -242,6 +314,27 @@ export default function FUOExamViewer() {
       startY: event.clientY,
       baseOffsetX: currentImageOffset.x,
       baseOffsetY: currentImageOffset.y,
+      touchIdentifier: null,
+      moved: false,
+    };
+    setIsImageDragging(true);
+  };
+
+  const handleImageTouchStart = (event) => {
+    if (currentImageZoomStep === 0 || event.touches.length !== 1) {
+      return;
+    }
+
+    const touch = event.touches[0];
+    event.preventDefault();
+    dragStateRef.current = {
+      active: true,
+      imageKey: currentImageKey,
+      startX: touch.clientX,
+      startY: touch.clientY,
+      baseOffsetX: currentImageOffset.x,
+      baseOffsetY: currentImageOffset.y,
+      touchIdentifier: touch.identifier,
       moved: false,
     };
     setIsImageDragging(true);
@@ -370,15 +463,15 @@ export default function FUOExamViewer() {
           </div>
         ) : (
           <div className="fuo-question-viewer">
-            <div className="fuo-question-image-panel" ref={imagePanelRef}>
+            <div className={`fuo-question-image-panel ${isPseudoFullscreen ? 'is-pseudo-fullscreen' : ''}`} ref={imagePanelRef}>
               <div className="fuo-image-tools">
                 <button
                   type="button"
                   className="fuo-fullscreen-button"
                   onClick={toggleFullscreen}
-                  aria-label={isFullscreen ? 'Thoat toan man hinh' : 'Phong to toan man hinh'}
+                  aria-label={isViewerFullscreen ? 'Thoat toan man hinh' : 'Phong to toan man hinh'}
                 >
-                  {isFullscreen ? 'Thoat full' : 'Full man hinh'}
+                  {isViewerFullscreen ? 'Thoat full' : 'Full man hinh'}
                 </button>
               </div>
 
@@ -403,6 +496,7 @@ export default function FUOExamViewer() {
                 }}
                 onClick={handleImageClick}
                 onMouseDown={handleImageMouseDown}
+                onTouchStart={handleImageTouchStart}
                 onDragStart={(event) => event.preventDefault()}
                 draggable={false}
               />
