@@ -1,6 +1,7 @@
 import { fuoSubjectsBySemester } from './fuoSubjects';
 import { hcm202Fa2024ReExam } from './hcm202Fa2024Re';
 import { swt301ExamDataBySubject } from './swt301ExamData';
+import { wdu203cExamDataById } from './wdu203cExamData';
 
 const allSubjects = [...new Set(Object.values(fuoSubjectsBySemester).flat())];
 
@@ -173,6 +174,35 @@ fuoExamDataBySubject.JDP123.FE = [
 ];
 
 fuoExamDataBySubject.JDP123.PE = [];
+
+fuoExamDataBySubject.WDU203c.FE = [
+  { id: 'sp-2025-fe', title: 'WDU203c - SP 2025 - FE', code: 'Ma de #001', imageUrls: [] },
+  { id: 'fa25-fedn', title: 'WDU203c - FA25 - FEDN', code: 'Ma de #002', imageUrls: [] },
+  { id: 'fa25-re', title: 'WDU203c - FA25 - RE', code: 'Ma de #003', imageUrls: [] },
+  { id: 'su25-fe-1', title: 'WDU203c - SU25 - FE', code: 'Ma de #004', imageUrls: [] },
+  { id: 'su25-re', title: 'WDU203c - SU25 - RE', code: 'Ma de #005', imageUrls: [] },
+  { id: 'su-2024-fe', title: 'WDU203c - SU 2024 - FE', code: 'Ma de #006', imageUrls: [] },
+  { id: 'fa-2024-fe', title: 'WDU203c - FA 2024 - FE', code: 'Ma de #007', imageUrls: [] },
+  { id: 'su25-fe-2', title: 'WDU203c - SU25 - FE', code: 'Ma de #008', imageUrls: [] },
+  { id: 'fa-2024-re', title: 'WDU203c - FA 2024 - RE', code: 'Ma de #009', imageUrls: [] },
+  { id: 'su-2024-re', title: 'WDU203c - SU 2024 - RE', code: 'Ma de #010', imageUrls: [] },
+  { id: 'sp-2025-re', title: 'WDU203c - SP 2025 - RE', code: 'Ma de #011', imageUrls: [] },
+  { id: 'resp24', title: 'WDU203c - RESP24', code: 'Ma de #012', imageUrls: [] },
+  { id: 'fesp24', title: 'WDU203c - FESP24', code: 'Ma de #013', imageUrls: [] },
+  { id: 'fe-fa-2023', title: 'WDU203c - FE - FA 2023', code: 'Ma de #014', imageUrls: [] },
+  { id: 'fe-su-2023', title: 'WDU203c - FE - SU 2023', code: 'Ma de #015', imageUrls: [] },
+  { id: 're-fall2023', title: 'WDU203c - RE - FALL2023', code: 'Ma de #016', imageUrls: [] },
+  { id: 'sp-2023-fe', title: 'WDU203c - SP 2023 - FE', code: 'Ma de #017', imageUrls: [] },
+].map((exam) => {
+  const examAssets = wdu203cExamDataById[exam.id] ?? {};
+  return {
+    ...exam,
+    imageUrls: examAssets.imageUrls ?? exam.imageUrls,
+    questionItems: examAssets.questionItems ?? exam.questionItems,
+  };
+});
+
+fuoExamDataBySubject.WDU203c.PE = [];
 
 fuoExamDataBySubject.PRF192.FE = [
   { id: 'fe-1', title: 'De FE 1', imageUrls: [] },
