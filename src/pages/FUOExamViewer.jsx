@@ -32,6 +32,8 @@ const isSameChoiceSet = (left, right) => {
   return left.every((choice, index) => choice === right[index]);
 };
 
+const IMAGE_ZOOM_LEVELS = [1, 1.6, 2.4];
+
 export default function FUOExamViewer() {
   const { ky, subject, variant, examId } = useParams();
   const exams = fuoExamDataBySubject[subject]?.[variant] ?? [];
@@ -61,7 +63,23 @@ export default function FUOExamViewer() {
   const [isTestMode, setIsTestMode] = useState(false);
   const [testSelections, setTestSelections] = useState({});
   const [testResult, setTestResult] = useState(null);
+  const [isImageDragging, setIsImageDragging] = useState(false);
+  const [imageZoomState, setImageZoomState] = useState({
+    imageKey: null,
+    step: 0,
+    origin: { x: 50, y: 50 },
+    offset: { x: 0, y: 0 },
+  });
   const imagePanelRef = useRef(null);
+  const dragStateRef = useRef({
+    active: false,
+    imageKey: null,
+    startX: 0,
+    startY: 0,
+    baseOffsetX: 0,
+    baseOffsetY: 0,
+    moved: false,
+  });
 
   const currentIndex = viewerState.examId === examId ? viewerState.currentIndex : 0;
 
@@ -129,6 +147,105 @@ export default function FUOExamViewer() {
   const currentQuestionNumber = questionItems[currentIndex]?.questionNumber;
   const selectedChoices = testSelections[currentQuestionNumber] ?? [];
   const currentQuestionResult = testResult?.questionResults?.[currentIndex] ?? null;
+  const currentImageKey = `${examId}-${currentIndex}`;
+  const currentImageZoomStep = imageZoomState.imageKey === currentImageKey ? imageZoomState.step : 0;
+  const currentZoomOrigin = imageZoomState.imageKey === currentImageKey
+    ? imageZoomState.origin
+    : { x: 50, y: 50 };
+  const currentImageOffset = imageZoomState.imageKey === currentImageKey
+    ? imageZoomState.offset
+    : { x: 0, y: 0 };
+  const currentImageZoom = IMAGE_ZOOM_LEVELS[currentImageZoomStep];
+
+  useEffect(() => {
+    if (!isImageDragging) {
+      return undefined;
+    }
+
+    const handleMouseMove = (event) => {
+      const dragState = dragStateRef.current;
+
+      if (!dragState.active || dragState.imageKey !== currentImageKey) {
+        return;
+      }
+
+      const deltaX = event.clientX - dragState.startX;
+      const deltaY = event.clientY - dragState.startY;
+
+      if (Math.abs(deltaX) > 2 || Math.abs(deltaY) > 2) {
+        dragStateRef.current.moved = true;
+      }
+
+      setImageZoomState((prev) => {
+        if (prev.imageKey !== currentImageKey) {
+          return prev;
+        }
+
+        return {
+          ...prev,
+          offset: {
+            x: dragState.baseOffsetX + deltaX,
+            y: dragState.baseOffsetY + deltaY,
+          },
+        };
+      });
+    };
+
+    const handleMouseUp = () => {
+      dragStateRef.current.active = false;
+      setIsImageDragging(false);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isImageDragging, currentImageKey]);
+
+  const handleImageClick = (event) => {
+    if (dragStateRef.current.moved) {
+      dragStateRef.current.moved = false;
+      return;
+    }
+
+    const imageRect = event.currentTarget.getBoundingClientRect();
+    const nextZoomStep = (currentImageZoomStep + 1) % IMAGE_ZOOM_LEVELS.length;
+    let nextOrigin = { x: 50, y: 50 };
+
+    if (imageRect.width > 0 && imageRect.height > 0) {
+      const x = Math.min(100, Math.max(0, ((event.clientX - imageRect.left) / imageRect.width) * 100));
+      const y = Math.min(100, Math.max(0, ((event.clientY - imageRect.top) / imageRect.height) * 100));
+      nextOrigin = { x, y };
+    }
+
+    setImageZoomState({
+      imageKey: currentImageKey,
+      step: nextZoomStep,
+      origin: nextOrigin,
+      offset: { x: 0, y: 0 },
+    });
+  };
+
+  const handleImageMouseDown = (event) => {
+    if (currentImageZoomStep === 0 || event.button !== 0) {
+      return;
+    }
+
+    event.preventDefault();
+    dragStateRef.current = {
+      active: true,
+      imageKey: currentImageKey,
+      startX: event.clientX,
+      startY: event.clientY,
+      baseOffsetX: currentImageOffset.x,
+      baseOffsetY: currentImageOffset.y,
+      moved: false,
+    };
+    setIsImageDragging(true);
+  };
 
   const toggleChoice = (choice) => {
     if (!currentQuestionNumber) {
@@ -278,7 +395,16 @@ export default function FUOExamViewer() {
               <img
                 src={questionItems[currentIndex].imageUrl}
                 alt={`${subject} ${exam.title} ${variant} cau ${questionItems[currentIndex].questionNumber}`}
-                className="fuo-question-image"
+                className={`fuo-question-image ${currentImageZoomStep > 0 ? 'is-zoomed' : ''}`}
+                style={{
+                  transform: `translate(${currentImageOffset.x}px, ${currentImageOffset.y}px) scale(${currentImageZoom})`,
+                  transformOrigin: `${currentZoomOrigin.x}% ${currentZoomOrigin.y}%`,
+                  transition: isImageDragging ? 'none' : undefined,
+                }}
+                onClick={handleImageClick}
+                onMouseDown={handleImageMouseDown}
+                onDragStart={(event) => event.preventDefault()}
+                draggable={false}
               />
 
               <button

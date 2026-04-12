@@ -244,6 +244,17 @@
 	height: auto;
 	display: block;
 	background: #0b1119;
+	transition: transform 0.18s ease;
+	cursor: zoom-in;
+	user-select: none;
+}
+
+.fuo-question-image.is-zoomed {
+	cursor: zoom-out;
+}
+
+.fuo-question-image.is-zoomed:active {
+	cursor: grabbing;
 }
 
 .fuo-question-image-panel:fullscreen {
