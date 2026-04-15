@@ -1,5 +1,6 @@
 import { fuoSubjectsBySemester } from './fuoSubjects';
 import { hcm202Fa2024ReExam } from './hcm202Fa2024Re';
+import { mco201ExamDataById } from './mco201ExamData';
 import { swt301ExamDataBySubject } from './swt301ExamData';
 import { wdu203cExamDataById } from './wdu203cExamData';
 
@@ -174,6 +175,25 @@ fuoExamDataBySubject.JDP123.FE = [
 ];
 
 fuoExamDataBySubject.JDP123.PE = [];
+
+fuoExamDataBySubject.MCO201.FE = [
+  { id: 'mco201c-sp-2025-fe', title: 'MCO201c - SP 2025 - FE', code: 'Ma de #001', imageUrls: [] },
+  { id: 'mco201m-sp-2025-fe', title: 'MCO201m - SP 2025 - FE', code: 'Ma de #002', imageUrls: [] },
+  { id: 'mco201m-fa-2024-fe', title: 'MCO201m - FA 2024 - FE', code: 'Ma de #003', imageUrls: [] },
+  { id: 'mco201m-sp-2024-fe', title: 'MCO201m - SP 2024 - FE', code: 'Ma de #004', imageUrls: [] },
+  { id: 'mco201m-fa-2023-re', title: 'MCO201m - FA 2023 - RE', code: 'Ma de #005', imageUrls: [] },
+  { id: 'mco201m-fa-2023-fe', title: 'MCO201m - FA 2023 - FE', code: 'Ma de #006', imageUrls: [] },
+  { id: 'mco201-fe-su-2023', title: 'MCO201 - FE - SU 2023', code: 'Ma de #007', imageUrls: [] },
+].map((exam) => {
+  const examAssets = mco201ExamDataById[exam.id] ?? {};
+  return {
+    ...exam,
+    imageUrls: examAssets.imageUrls ?? exam.imageUrls,
+    questionItems: examAssets.questionItems ?? exam.questionItems,
+  };
+});
+
+fuoExamDataBySubject.MCO201.PE = [];
 
 fuoExamDataBySubject.WDU203c.FE = [
   { id: 'sp-2025-fe', title: 'WDU203c - SP 2025 - FE', code: 'Ma de #001', imageUrls: [] },
