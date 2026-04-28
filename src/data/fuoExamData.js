@@ -4,6 +4,7 @@ import { jpd123ExamDataById } from './jpd123ExamData';
 import { mco201ExamDataById } from './mco201ExamData';
 import { swt301ExamDataBySubject } from './swt301ExamData';
 import { wdu203cExamDataById } from './wdu203cExamData';
+import { prj301ExamDataById } from './prj301ExamData';
 
 const allSubjects = [...new Set(Object.values(fuoSubjectsBySemester).flat())];
 
@@ -141,3 +142,30 @@ fuoExamDataBySubject.PRF192.FE = [
 fuoExamDataBySubject.PRF192.PE = [
   { id: 'pe-1', title: 'De PE 1', imageUrls: [] },
 ];
+
+fuoExamDataBySubject.PRJ301.FE = [
+  { id: 'sp26-re', title: 'PRJ301 - SP26 - RE', code: 'Ma de #001', imageUrls: [] },
+  { id: 'sp26-fe', title: 'PRJ301 - SP26 - FE', code: 'Ma de #002', imageUrls: [] },
+  { id: 'fa25-feb5', title: 'PRJ301 - FA25 - FEB5', code: 'Ma de #003', imageUrls: [] },
+  { id: 'fa25-final-exam', title: 'PRJ301 - FA25 - Final Exam', code: 'Ma de #004', imageUrls: [] },
+  { id: 'su25-b5-re', title: 'PRJ301 - SU25 - B5 - RE', code: 'Ma de #005', imageUrls: [] },
+  { id: 'su25-b5-1', title: 'PRJ301 - SU25 - B5 - 1', code: 'Ma de #006', imageUrls: [] },
+  { id: 'su25-re', title: 'PRJ301 - SU25 - RE', code: 'Ma de #007', imageUrls: [] },
+  { id: 'fa-2024-re', title: 'PRJ301 - FA 2024 - RE', code: 'Ma de #008', imageUrls: [] },
+  { id: 'fa-2024-fe', title: 'PRJ301 - FA 2024 - FE', code: 'Ma de #009', imageUrls: [] },
+  { id: 'sp-2025-re', title: 'PRJ301 - SP 2025 - RE', code: 'Ma de #010', imageUrls: [] },
+  { id: 'reb5-fa-2023', title: 'PRJ301 - REB5 - FA 2023', code: 'Ma de #011', imageUrls: [] },
+  { id: 'sp-2025-fe', title: 'PRJ301 - SP 2025 - FE', code: 'Ma de #012', imageUrls: [] },
+  { id: 'sp-2025-block-5-1', title: 'PRJ301 - SP 2025 - Block 5 - 1', code: 'Ma de #013', imageUrls: [] },
+  { id: 'sp-2025-block-5-2', title: 'PRJ301 - SP 2025 - Block 5 - 2', code: 'Ma de #014', imageUrls: [] },
+  { id: 'su25-fe', title: 'PRJ301 - SU25 - FE', code: 'Ma de #015', imageUrls: [] },
+].map((exam) => {
+  const examAssets = prj301ExamDataById[exam.id] ?? {};
+  return {
+    ...exam,
+    imageUrls: examAssets.imageUrls ?? exam.imageUrls,
+    questionItems: examAssets.questionItems ?? exam.questionItems,
+  };
+});
+
+fuoExamDataBySubject.PRJ301.PE = [];

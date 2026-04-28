@@ -1,0 +1,662 @@
+﻿FUO - KET QUA COMMENTS & DAP AN
+Thread: Đề Thi FE PRJ301 - SP26 - FE
+URL: https://fuoverflow.com/threads/prj301-sp26-fe.6277/
+Thoi gian: 20:31:42 28/4/2026
+Tong so anh: 50
+
+BANG DAP AN TONG HOP
+
+[Anh #001] Q1.jpg
+  Top: E -> 1/1 (100.0%)
+    E: 1 phieu (100%)
+
+[Anh #002] Q2.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #003] Q3.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #004] Q4.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #005] Q5.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #006] Q6.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #007] Q7.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #008] Q8.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #009] Q9.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #010] Q10.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #011] Q11.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #012] Q12.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #013] Q13.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #014] Q14.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #015] Q15.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #016] Q16.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #017] Q17.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #018] Q18.jpg
+  Top: D -> 1/1 (100.0%)
+    D: 1 phieu (100%)
+
+[Anh #019] Q19.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #020] Q20.jpg
+  Top: D -> 1/1 (100.0%)
+    D: 1 phieu (100%)
+
+[Anh #021] Q21.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #022] Q22.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #023] Q23.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #024] Q24.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #025] Q25.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #026] Q26.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #027] Q27.jpg
+  Top: D -> 1/1 (100.0%)
+    D: 1 phieu (100%)
+
+[Anh #028] Q28.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #029] Q29.jpg
+  Top: D -> 1/1 (100.0%)
+    D: 1 phieu (100%)
+
+[Anh #030] Q30.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #031] Q31.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #032] Q32.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #033] Q33.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #034] Q34.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #035] Q35.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #036] Q36.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #037] Q37.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #038] Q38.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #039] Q39.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #040] Q40.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #041] Q41.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #042] Q42.jpg
+  Top: B -> 1/1 (100.0%)
+    B: 1 phieu (100%)
+
+[Anh #043] Q43.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #044] Q44.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #045] Q45.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #046] Q46.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+[Anh #047] Q47.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #048] Q48.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #049] Q49.jpg
+  Top: C -> 1/1 (100.0%)
+    C: 1 phieu (100%)
+
+[Anh #050] Q50.jpg
+  Top: A -> 1/1 (100.0%)
+    A: 1 phieu (100%)
+
+CHI TIET TUNG ANH
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #001] Q1.jpg
+URL: https://fuoverflow.com/media/q1-jpg.122923/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:38
+     E [-> E]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #002] Q2.jpg
+URL: https://fuoverflow.com/media/q2-jpg.122924/
+So comment: 1
+
+  #001 | egfwegwe | 27/4/26 lúc 08:11
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #003] Q3.jpg
+URL: https://fuoverflow.com/media/q3-jpg.122925/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:39
+     A [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #004] Q4.jpg
+URL: https://fuoverflow.com/media/q4-jpg.122926/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:40
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #005] Q5.jpg
+URL: https://fuoverflow.com/media/q5-jpg.122927/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:41
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #006] Q6.jpg
+URL: https://fuoverflow.com/media/q6-jpg.122928/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:42
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #007] Q7.jpg
+URL: https://fuoverflow.com/media/q7-jpg.122929/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:45
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #008] Q8.jpg
+URL: https://fuoverflow.com/media/q8-jpg.122930/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:45
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #009] Q9.jpg
+URL: https://fuoverflow.com/media/q9-jpg.122931/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:48
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #010] Q10.jpg
+URL: https://fuoverflow.com/media/q10-jpg.122932/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:49
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #011] Q11.jpg
+URL: https://fuoverflow.com/media/q11-jpg.122933/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:49
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #012] Q12.jpg
+URL: https://fuoverflow.com/media/q12-jpg.122934/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:50
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #013] Q13.jpg
+URL: https://fuoverflow.com/media/q13-jpg.122935/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:51
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #014] Q14.jpg
+URL: https://fuoverflow.com/media/q14-jpg.122936/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:52
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #015] Q15.jpg
+URL: https://fuoverflow.com/media/q15-jpg.122937/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:52
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #016] Q16.jpg
+URL: https://fuoverflow.com/media/q16-jpg.122938/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:53
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #017] Q17.jpg
+URL: https://fuoverflow.com/media/q17-jpg.122939/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:53
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #018] Q18.jpg
+URL: https://fuoverflow.com/media/q18-jpg.122940/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:54
+     d [-> D]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #019] Q19.jpg
+URL: https://fuoverflow.com/media/q19-jpg.122941/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:54
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #020] Q20.jpg
+URL: https://fuoverflow.com/media/q20-jpg.122942/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:55
+     d [-> D]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #021] Q21.jpg
+URL: https://fuoverflow.com/media/q21-jpg.122943/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:56
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #022] Q22.jpg
+URL: https://fuoverflow.com/media/q22-jpg.122944/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:57
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #023] Q23.jpg
+URL: https://fuoverflow.com/media/q23-jpg.122945/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:58
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #024] Q24.jpg
+URL: https://fuoverflow.com/media/q24-jpg.122946/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:59
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #025] Q25.jpg
+URL: https://fuoverflow.com/media/q25-jpg.122947/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 14:59
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #026] Q26.jpg
+URL: https://fuoverflow.com/media/q26-jpg.122948/
+So comment: 1
+
+  #001 | egfwegwe | 27/4/26 lúc 09:19
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #027] Q27.jpg
+URL: https://fuoverflow.com/media/q27-jpg.122949/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:00
+     d [-> D]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #028] Q28.jpg
+URL: https://fuoverflow.com/media/q28-jpg.122950/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:01
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #029] Q29.jpg
+URL: https://fuoverflow.com/media/q29-jpg.122951/
+So comment: 1
+
+  #001 | egfwegwe | 27/4/26 lúc 09:23
+     d [-> D]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #030] Q30.jpg
+URL: https://fuoverflow.com/media/q30-jpg.122952/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:02
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #031] Q31.jpg
+URL: https://fuoverflow.com/media/q31-jpg.122953/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:03
+     A [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #032] Q32.jpg
+URL: https://fuoverflow.com/media/q32-jpg.122954/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:08
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #033] Q33.jpg
+URL: https://fuoverflow.com/media/q33-jpg.122955/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:08
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #034] Q34.jpg
+URL: https://fuoverflow.com/media/q34-jpg.122956/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:09
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #035] Q35.jpg
+URL: https://fuoverflow.com/media/q35-jpg.122957/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:10
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #036] Q36.jpg
+URL: https://fuoverflow.com/media/q36-jpg.122958/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:11
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #037] Q37.jpg
+URL: https://fuoverflow.com/media/q37-jpg.122959/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:12
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #038] Q38.jpg
+URL: https://fuoverflow.com/media/q38-jpg.122960/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:13
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #039] Q39.jpg
+URL: https://fuoverflow.com/media/q39-jpg.122961/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:13
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #040] Q40.jpg
+URL: https://fuoverflow.com/media/q40-jpg.122962/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:14
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #041] Q41.jpg
+URL: https://fuoverflow.com/media/q41-jpg.122963/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:14
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #042] Q42.jpg
+URL: https://fuoverflow.com/media/q42-jpg.122964/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:15
+     b [-> B]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #043] Q43.jpg
+URL: https://fuoverflow.com/media/q43-jpg.122965/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:17
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #044] Q44.jpg
+URL: https://fuoverflow.com/media/q44-jpg.122966/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:18
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #045] Q45.jpg
+URL: https://fuoverflow.com/media/q45-jpg.122967/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:22
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #046] Q46.jpg
+URL: https://fuoverflow.com/media/q46-jpg.122968/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:23
+     A [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #047] Q47.jpg
+URL: https://fuoverflow.com/media/q47-jpg.122969/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:23
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #048] Q48.jpg
+URL: https://fuoverflow.com/media/q48-jpg.122970/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:24
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #049] Q49.jpg
+URL: https://fuoverflow.com/media/q49-jpg.122971/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:24
+     c [-> C]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[Anh #050] Q50.jpg
+URL: https://fuoverflow.com/media/q50-jpg.122972/
+So comment: 1
+
+  #001 | leviphuockhang | 26/4/26 lúc 15:25
+     a [-> A]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tong: 50 comment / 50 anh
