@@ -254,7 +254,7 @@ export const fuoSubjectsBySemester = {
     'WBS200',
     'WDU203c',
   ],
-  6: ['ENW492c', 'NLP301c', 'OJT202'],
+  6: ['ENW492c', 'ENW493c', 'NLP301c', 'OJT202'],
   7: [
     'ADS301m',
     'AIL302m',

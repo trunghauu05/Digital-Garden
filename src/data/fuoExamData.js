@@ -5,6 +5,8 @@ import { mco201ExamDataById } from './mco201ExamData';
 import { swt301ExamDataBySubject } from './swt301ExamData';
 import { wdu203cExamDataById } from './wdu203cExamData';
 import { prj301ExamDataById } from './prj301ExamData';
+import { enw493cExamDataById } from './enw493cExamData';
+
 
 const allSubjects = [...new Set(Object.values(fuoSubjectsBySemester).flat())];
 
@@ -169,3 +171,16 @@ fuoExamDataBySubject.PRJ301.FE = [
 });
 
 fuoExamDataBySubject.PRJ301.PE = [];
+
+fuoExamDataBySubject.ENW493c.FE = Object.entries(enw493cExamDataById).map(([id, assets], index) => {
+  return {
+    id,
+    title: assets.title,
+    code: `Ma de #${String(index + 1).padStart(3, '0')}`,
+    imageUrls: assets.imageUrls,
+    questionItems: assets.questionItems,
+  };
+});
+
+fuoExamDataBySubject.ENW493c.PE = [];
+
