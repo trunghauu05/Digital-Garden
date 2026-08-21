@@ -6,8 +6,10 @@ import { swt301ExamDataBySubject } from './swt301ExamData';
 import { wdu203cExamDataById } from './wdu203cExamData';
 import { prj301ExamDataById } from './prj301ExamData';
 import { enw493cExamDataById } from './enw493cExamData';
-
-
+import { mma301ExamDataById } from './mma301ExamData';
+import { pmg201cExamDataById } from './pmg201cExamData';
+import { sdn302ExamDataById } from './sdn302ExamData';
+import { swd392ExamDataById } from './swd392ExamData';
 const allSubjects = [...new Set(Object.values(fuoSubjectsBySemester).flat())];
 
 const createVariantBank = () => ({
@@ -167,3 +169,50 @@ fuoExamDataBySubject.ENW493c.FE = Object.entries(enw493cExamDataById).map(([id, 
 
 fuoExamDataBySubject.ENW493c.PE = [];
 
+fuoExamDataBySubject.MMA301.FE = Object.entries(mma301ExamDataById).map(([id, assets], index) => {
+  return {
+    id,
+    title: assets.title,
+    code: `Ma de #${String(index + 1).padStart(3, '0')}`,
+    imageUrls: assets.imageUrls,
+    questionItems: assets.questionItems,
+  };
+});
+
+fuoExamDataBySubject.MMA301.PE = [];
+
+fuoExamDataBySubject.PMG201c.FE = Object.entries(pmg201cExamDataById).map(([id, assets], index) => {
+  return {
+    id,
+    title: assets.title,
+    code: `Ma de #${String(index + 1).padStart(3, '0')}`,
+    imageUrls: assets.imageUrls,
+    questionItems: assets.questionItems,
+  };
+});
+
+fuoExamDataBySubject.PMG201c.PE = [];
+
+fuoExamDataBySubject.SDN302.FE = Object.entries(sdn302ExamDataById).map(([id, assets], index) => {
+  return {
+    id,
+    title: assets.title,
+    code: `Ma de #${String(index + 1).padStart(3, '0')}`,
+    imageUrls: assets.imageUrls,
+    questionItems: assets.questionItems,
+  };
+});
+
+fuoExamDataBySubject.SDN302.PE = [];
+
+fuoExamDataBySubject.SWD392.FE = Object.entries(swd392ExamDataById).map(([id, assets], index) => {
+  return {
+    id,
+    title: assets.title,
+    code: `Ma de #${String(index + 1).padStart(3, '0')}`,
+    imageUrls: assets.imageUrls,
+    questionItems: assets.questionItems,
+  };
+});
+
+fuoExamDataBySubject.SWD392.PE = [];
