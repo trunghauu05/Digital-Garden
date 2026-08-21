@@ -19,15 +19,6 @@ export const fuoExamDataBySubject = Object.fromEntries(
   allSubjects.map((subject) => [subject, createVariantBank()])
 );
 
-fuoExamDataBySubject.CSI104.FE = [
-  { id: 'fe-1', title: 'De FE 1', imageUrls: [] },
-  { id: 'fe-2', title: 'De FE 2', imageUrls: [] },
-];
-
-fuoExamDataBySubject.CSI104.PE = [
-  { id: 'pe-1', title: 'De PE 1', imageUrls: [] },
-];
-
 fuoExamDataBySubject.CEA201.FE = [
   { id: 'su-2024-fe', title: 'CEA201 - SU 2024 - FE', code: 'Ma de #001', imageUrls: [] },
   { id: 'fa25-re', title: 'CEA201 - FA25 - RE', code: 'Ma de #002', imageUrls: [] },
@@ -136,14 +127,6 @@ fuoExamDataBySubject.WDU203c.FE = [
 });
 
 fuoExamDataBySubject.WDU203c.PE = [];
-
-fuoExamDataBySubject.PRF192.FE = [
-  { id: 'fe-1', title: 'De FE 1', imageUrls: [] },
-];
-
-fuoExamDataBySubject.PRF192.PE = [
-  { id: 'pe-1', title: 'De PE 1', imageUrls: [] },
-];
 
 fuoExamDataBySubject.PRJ301.FE = [
   { id: 'sp26-re', title: 'PRJ301 - SP26 - RE', code: 'Ma de #001', imageUrls: [] },
